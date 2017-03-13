@@ -110,6 +110,8 @@ Additional exploration was performed on the data. The following are the stock pl
 
 Plot was produced using the 'ggbiplot' package, currently not available on CRAN.
 
+The placement of the ALP and LP within this graph is more a product of the rarity of the situations where preferences would be recorded to flow from one of the major parties. With the dominance of the major parties within the House of Representatives, it is not common that they both would not be present as the recipiant of the preferences. The most common occurances where this occures are addressed with the inclusion of both GRN and NP as variables within the model, though this won't address the small number of observations.
+
 ![](preferenceAnalysis_files/figure-markdown_github/PCAdetailAdditional-1.png)
 
 ### Retained Principle Componants
@@ -234,10 +236,14 @@ K means clustering was performed with three clusters as per the results seen fro
 
 ### K Means
 
+Three groups were used for k means clustering based on the initial PCA. Each group can be described based on the parties with whom the preferences flowed to from the member parties. Group 1 is prediinantly ALP, with LP being the next most important contributing factor. Group 2 has both LP and NP conributing almost the same, and represents what can be considered the right side of Australian politics. Group 3 is predimantly defined by GRN with ALP and LP next in that order. This group appears to mostly catch those who are voting for center to left minor parties.
+
+Placement of the ALP, LP and NP in these plots themselves are more an artifact of the way that the preference voting system works and how the two party preferred statistics are produced.
+
     ##   Group.1   To_ALP    To_GRN    To_LP     To_NP
-    ## 1       1 52.83218  3.885978 32.08233  3.291165
+    ## 1       1 49.06893 63.823146 37.68431 21.129586
     ## 2       2 37.30254  7.860444 60.29381 67.649223
-    ## 3       3 49.06893 63.823146 37.68431 21.129586
+    ## 3       3 52.83218  3.885978 32.08233  3.291165
 
 ![](preferenceAnalysis_files/figure-markdown_github/kmeans-1.png)
 
@@ -287,7 +293,7 @@ Count of rows per group per model.
 
 ### Dendrogram and Heatmap
 
-Ploting the relative values of the matrix the previous cluster analyses were based on as a heat map.
+Ploting the relative values of the matrix the previous cluster analyses were based on as a heat map. The heatmap below illustrates the relationships or lack of between recipiants of transfered preferences and those whom the preferences came from.
 
 ![](preferenceAnalysis_files/figure-markdown_github/hierachialHeatmap-1.png)
 
