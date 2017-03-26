@@ -241,9 +241,9 @@ Three groups were used for k means clustering based on the initial PCA. Each gro
 Placement of the ALP, LP and NP in these plots themselves are more an artifact of the way that the preference voting system works and how the two party preferred statistics are produced.
 
     ##   Group.1   To_ALP    To_GRN    To_LP     To_NP
-    ## 1       1 49.06893 63.823146 37.68431 21.129586
-    ## 2       2 37.30254  7.860444 60.29381 67.649223
-    ## 3       3 52.83218  3.885978 32.08233  3.291165
+    ## 1       1 37.30254  7.860444 60.29381 67.649223
+    ## 2       2 52.83218  3.885978 32.08233  3.291165
+    ## 3       3 49.06893 63.823146 37.68431 21.129586
 
 ![](preferenceAnalysis_files/figure-markdown_github/kmeans-1.png)
 
